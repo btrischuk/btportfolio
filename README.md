@@ -1,6 +1,6 @@
-# RED Starter
+# btportfolio
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A Wordpress multipage webpage designed to display the personal portfolio of Breckon Trischuk.
 
 ## Installation
 
@@ -8,7 +8,7 @@ A WordPress starter theme for RED Academy students, forked from Underscores.
 
 Then add me to your `wp-content` directory.
 
-### 2. Rename the `redstarter-master` directory
+### 2. Rename the `btportfolio-master` directory
 
 Make sure that the theme directory name is project appropriate!
 
