@@ -666,8 +666,18 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.home.widget-area {
-  background-color: purple; }
+.home {
+  background-color: grey; }
+
+.widget-area {
+  display: inline;
+  text-align: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right; }
 
 header .entry-header {
   background-color: blue; }
+
+.site-footer {
+  background-color: green; }

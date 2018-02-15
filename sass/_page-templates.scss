@@ -4,6 +4,12 @@
 
 /* Front page */
 
-.home.widget-area {
-  background-color: purple;
+.home{
+  background-color: grey;
+}
+
+.widget-area {
+  display: inline;
+  text-align: right;
+  justify-content: right;
 }
