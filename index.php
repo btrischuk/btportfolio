@@ -18,6 +18,8 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
+			<h1>Breckon Trischuk</h1>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
