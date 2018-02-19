@@ -427,6 +427,15 @@ a {
     outline: 0; }
 
 /* Menus */
+.logo {
+  background: url(../../images/breckon.jpg) no-repeat;
+  position: absolute;
+  background-size: 50px 33px;
+  height: 100px;
+  width: 100px;
+  left: 30rem;
+  top: 4rem; }
+
 .main-navigation {
   clear: both;
   display: block;
@@ -681,3 +690,11 @@ header .entry-header {
 
 .site-footer {
   background-color: green; }
+
+header.entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
