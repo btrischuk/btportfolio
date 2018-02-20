@@ -717,10 +717,18 @@ header .entry-header {
     font-size: 5rem;
     padding-left: 2rem; }
 
+.site-info a {
+  width: 5rem; }
+
 header.entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  z-index: -1;
+  position: absolute; }
+  header.entry-header img {
+    width: 100vw;
+    height: 100vh; }
