@@ -292,6 +292,18 @@ html {
   font-size: 16px;
   font-size: 1rem; }
 
+a, .site-info .svg-inline--fa {
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s; }
+
+a:hover {
+  font-size: 30px; }
+
+.site-info .svg-inline--fa:hover {
+  font-size: 6rem; }
+
 *,
 *:before,
 *:after {
