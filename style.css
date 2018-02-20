@@ -483,6 +483,8 @@ a {
     text-decoration: none;
     padding-right: 2rem;
     padding-left: 2rem; }
+  .main-navigation .page-item-34 {
+    display: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -701,7 +703,19 @@ header .entry-header {
   background-color: blue; }
 
 .site-footer {
-  background-color: green; }
+  background-color: transparent; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .site-info .svg-inline--fa {
+    font-size: 5rem;
+    padding-left: 2rem; }
 
 header.entry-header {
   display: -webkit-box;
