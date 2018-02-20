@@ -38,7 +38,7 @@ a {
 	z-index: 3;
 }
 .menu ul li a {
-	padding-right: 5rem;
+	
 }
 ul {
 
@@ -111,6 +111,9 @@ ul {
 	a {
 		display: block;
 		text-decoration: none;
+		padding-right: 2rem;
+		padding-left: 2rem;
+
 	}
 
 	.current_page_item > a,
