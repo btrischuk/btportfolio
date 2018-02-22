@@ -21,7 +21,7 @@ function btportfolio_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'btportfolio_body_classes' );
 
-function lovesea_login_logo() {
+function btportfolio_login_logo() {
 	echo '<style type="text/css">                                                                   
 			#login h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/red-panda.jpg) !important; 
 			background-size: 265px 250px;
