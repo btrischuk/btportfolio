@@ -1,16 +1,16 @@
 .site-footer {
   background-color: transparent;
-}
-
-.site-info {
-  display: flex;
-  flex-direction: column;
-  .svg-inline--fa {
-    font-size: 5rem;
-    padding-left: 2rem;
+  position: fixed;
+  top: 50vh;
+  .site-info {
+    display: flex;
+    flex-direction: column;
+    .svg-inline--fa {
+      font-size: 5rem;
+      padding-left: 2rem;
+    }
   }
-}
-
-.site-info a {
-  width: 5rem;
+  .site-info a {
+    width: 5rem;
+  }
 }
