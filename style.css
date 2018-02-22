@@ -299,7 +299,7 @@ a, .site-info .svg-inline--fa {
   transition: all ease-in-out 1s; }
 
 a:hover {
-  font-size: 30px; }
+  font-size: 120%; }
 
 .site-info .svg-inline--fa:hover {
   font-size: 6rem; }
@@ -428,9 +428,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #000000; }
   a:visited {
-    color: purple; }
+    color: #000000; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -708,9 +708,6 @@ object {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right; }
-
-header .entry-header {
-  background-color: blue; }
 
 .site-footer {
   background-color: transparent; }
