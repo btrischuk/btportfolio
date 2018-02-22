@@ -42,7 +42,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<section class="project-grid-container">
+		<section id="project" class="project-grid-container">
     	<h2 class="project-header">My Projects</h2>
     	<div class="latest-adventures-content">
 

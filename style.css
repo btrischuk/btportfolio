@@ -480,9 +480,6 @@ a {
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -707,7 +704,7 @@ object {
 .site-footer {
   background-color: transparent;
   position: fixed;
-  top: 50vh; }
+  bottom: 5vh; }
   .site-footer .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
