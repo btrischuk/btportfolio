@@ -88,6 +88,9 @@ function btportfolio_scripts() {
 	wp_enqueue_script( 'btportfolio-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'smooth-state');
+	wp_enqueue_script( 'smooth-state-functions');
+
 
 	//if font awesome is a .js cdn link
 	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', array(), 4.7, true);
