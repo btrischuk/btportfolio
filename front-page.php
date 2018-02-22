@@ -4,6 +4,8 @@
  *
  * @package btportfolio
  */
+/* Template Name: front-page */ 
+
 
 get_header(); ?>
 
@@ -16,9 +18,13 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
-			<?php endif; ?>
-
-			<h1>Breckon Trischuk</h1>
+      <?php endif; ?>
+      
+      <div class="hero">
+        <h1>Hello.</h1>
+        <h1>I'm Breckon.</h1>
+        <h2>I create websites.</h2>
+      </div>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -40,3 +46,5 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
+
+

@@ -15,6 +15,7 @@ Make sure that the theme directory name is project appropriate!
 ### 3. Install the dev dependencies
 
 Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+ScrollMagic
 
 ### 4. Update the proxy in `gulpfile.js`
 

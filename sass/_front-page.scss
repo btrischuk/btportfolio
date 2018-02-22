@@ -1,11 +1,13 @@
 header.entry-header{
   display: flex;
   justify-content: center;
-  z-index: -1;
+  // z-index: -1;
   position: absolute;
-  img {
-    // z-index: -1;
-    width: 100vw;
-    height: 100vh;
-  }
+
 }
+.hero {
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+}
+
