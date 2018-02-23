@@ -17,6 +17,11 @@
   justify-content: center;
 }
 
+@mixin center-h {
+	display: flex;
+	justify-content: center;
+}
+
 @mixin tablet {
 	@media (min-width: $tablet-width){
 		@content;

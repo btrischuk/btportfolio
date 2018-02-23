@@ -16,11 +16,6 @@ get_header(); ?>
 				</header>
       <?php endif; ?>
       
-      <div class="hero">
-        <h1>Hello.</h1>
-        <h1>I'm Breckon.</h1>
-        <h2>I create websites.</h2>
-      </div>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
