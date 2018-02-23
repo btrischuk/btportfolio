@@ -1,9 +1,8 @@
-header.entry-header{
-  display: flex;
-  justify-content: center;
-  // z-index: -1;
-  position: absolute;
-}
+// header.entry-header{
+//   display: flex;
+//   justify-content: center;
+//   position: absolute;
+// }
 
 .menu ul {
   flex-direction: row;
@@ -11,16 +10,17 @@ header.entry-header{
 }
 
 .hero {
-  background: linear-gradient(180deg,rgba(0,0,0,.6) 0,rgba(0,0,0,.6)),
+  @include center-all;
+  background: $color__background-gradient,
   url(../../images/squam-chief.jpg); 
   background-size: cover; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   z-index: 5;
   width: 100vw;
   height: 100vh;
+  color: $color__text-second;
 }
+
+
 
 

@@ -6,9 +6,11 @@ $base__space-unit: 1.5rem;
 
 $color__background-body: #fff;
 $color__text-main: #404040;
+$color__text-second: rgba(216, 152, 15, 0.712);
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
+$color__background-gradient: linear-gradient(-90deg,rgba(0, 0, 0, 0.8) 0,rgba(30, 214, 91, 0.4));
 
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
@@ -25,3 +27,7 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// Screen sizes
+$tablet-width: 600px;
+$desktop-width: 1000px;
