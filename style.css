@@ -733,20 +733,27 @@ object {
   display: inline-block;
   max-width: 100%; }
 
-.coffee {
+.page-template-about .entry-titl {
+  display: none; }
+
+.page-template-contact .entry-title {
+  display: none; }
+
+.page-template-contact .coffee {
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: -1; }
 
-.coffe-date {
+.page-template-contact .coffee-date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  color: white; }
 
 form {
   width: 500px;
