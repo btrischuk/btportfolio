@@ -295,14 +295,15 @@ html {
 a, .site-info .svg-inline--fa {
   -webkit-transition-property: font-size;
   transition-property: font-size;
-  -webkit-transition: all ease-in-out 1s;
-  transition: all ease-in-out 1s; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
 
 a:hover {
   font-size: 120%; }
 
-.site-info .svg-inline--fa:hover {
-  font-size: 6rem; }
+.svg-inline--fa:hover {
+  border: 2px solid #007515;
+  border-radius: 5rem; }
 
 *,
 *:before,
@@ -440,7 +441,6 @@ a {
 
 /* Menus */
 .logo {
-  background: url(../../images/red-panda.jpg) no-repeat;
   position: fixed;
   top: 0;
   background-size: 100px 100px;
@@ -703,9 +703,27 @@ object {
       -ms-flex-pack: right;
           justify-content: right; }
 
+.site-content {
+  background: url(../../images/background.png); }
+
 .project-content {
   margin: 0 auto;
   width: 50vw; }
+
+.entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .project-header {
   display: -webkit-box;
@@ -723,11 +741,8 @@ object {
 .project-image {
   height: 30rem;
   width: 50rem;
-  padding: 4px;
-  line-height: 1.428571429;
-  background-color: black;
-  border: 1px solid green;
-  border-radius: 0;
+  border: 2px solid #007515;
+  border-radius: 4rem;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
@@ -740,7 +755,7 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: chocolate;
+  background-color: #007515;
   text-decoration: none;
   margin: 0 auto;
   width: 8rem;
@@ -803,8 +818,9 @@ form {
         -ms-flex-direction: column;
             flex-direction: column; }
     .site-footer .site-info .svg-inline--fa {
-      font-size: 5rem;
-      padding-left: 2rem; }
+      font-size: 4rem;
+      margin: 0 0 1rem 1rem;
+      padding: .5rem; }
   .site-footer .site-info a {
     width: 5rem; }
 

@@ -4,6 +4,8 @@ $base__space-unit: 1.5rem;
 
 // Colors
 
+$color__brand-main: #007515;
+
 $color__background-body: #fff;
 $color__text-main: #404040;
 $color__text-second: rgba(216, 152, 15, 0.712);
@@ -20,6 +22,8 @@ $color__border-abbr: #666;
 $color__link: #000000;
 $color__link-hover: midnightblue;
 
+$color__border-main: 2px solid $color__brand-main;
+
 // Typography
 
 $font__main: sans-serif;
@@ -27,6 +31,9 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+//transitions
+$transition__main: all 0.2s ease-in-out;
 
 // Screen sizes
 $tablet-width: 600px;

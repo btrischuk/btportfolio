@@ -26,7 +26,7 @@
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<div class="logo-container">
-						<a href="<?php echo get_home_url(); ?>"><div class="logo"></div></a>
+						<a href="<?php echo get_home_url(); ?>"><div class="logo"><p>Breckon Trischuk.</p></div></a>
 						</div>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->

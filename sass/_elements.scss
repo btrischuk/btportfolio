@@ -9,15 +9,20 @@ html {
 //transition hover on all 'a' tags
 a, .site-info .svg-inline--fa {
 	transition-property: font-size;
-	transition: all ease-in-out 1s;
+	transition: $transition__main;
+
 }
 
 a:hover {
 font-size: 120%;
+
 }
 
-.site-info .svg-inline--fa:hover {
-font-size: 6rem;
+.svg-inline--fa:hover {
+
+	border: $color__border-main;
+	border-radius: 5rem;
+	
 }
 
 

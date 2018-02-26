@@ -15,15 +15,20 @@
 }
 
 //project page
+.site-content {
+background:   
+url(../../images/background.png);
+}
 
 .project-content  {
-
   margin: 0 auto;
   width: 50vw;
-  
-    // @include center-h;
-    // flex-direction: column;
 } 
+
+.entry-header {
+  @include center-all;
+  flex-direction: column;
+}
 
   .project-header {
     display: flex;
@@ -39,22 +44,18 @@
   .project-image {
     height: 30rem;
     width: 50rem;
-    padding: 4px;
-    line-height: 1.428571429;
-    background-color: black;
-    border: 1px solid green;
-    border-radius: 0;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    border: $color__border-main;
+    border-radius: 4rem;
+    -webkit-transition: $transition__main;
+    transition: $transition__main;
     display: inline-block;
     max-width: 100%;
-    // height: auto;
 }
 
 .project-buton {
   display: flex;
   justify-content: center;
-  background-color: chocolate;
+  background-color: $color__brand-main;
   text-decoration: none;
   margin: 0 auto;
   width: 8rem;
