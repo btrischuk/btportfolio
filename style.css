@@ -733,6 +733,22 @@ object {
   display: inline-block;
   max-width: 100%; }
 
+.project-buton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: chocolate;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 8rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  -webkit-box-shadow: 7px 0px 25px 3px rgba(0, 0, 0, 0.9);
+  box-shadow: 7px 0px 25px 3px rgba(0, 0, 0, 0.9); }
+
 .page-template-about .entry-titl {
   display: none; }
 
