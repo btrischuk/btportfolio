@@ -14,7 +14,7 @@ body {
     font-size: 1em; } }
 /* line 38, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
 a {
-  color: #4472B9;
+  color: #007515;
   text-decoration: none;
   transition: color 0.15s ease-in; }
   /* line 42, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
@@ -22,10 +22,10 @@ a {
     color: #3D67A6; }
   /* line 45, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
   a:active, a:focus {
-    color: #222; }
+    color: #007515; }
   /* line 49, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
   a:visited {
-    color: #673ab7; }
+    color: #007515; }
 
 /* line 54, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
 code {

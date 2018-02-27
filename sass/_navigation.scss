@@ -5,22 +5,25 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: $color__background-body;
 
 	&:visited {
-		color: $color__link;
+		color: $color__background-body;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		background-color: blue;
+
+
 	}
+
 	&:focus {
 		outline: thin dotted;
 	}
 	&:hover,
 	&:active {
-		outline: 0;
+		outline: 5;
 	}
 }
 
@@ -41,40 +44,13 @@ ul {
 
 }
 
-// .page-item-2 {
-// 	position: fixed;
-// 	top: 50%;
-// 	left: 3rem;
-// 	background-color: purple;
-// 	border-radius: 5rem;
-// 	padding: .9rem;
-// }
-
-// .page-item-31 {
-// 	position: fixed;
-// 	top: 50%;
-// 	right: 3rem;
-// 	background-color: purple;
-// 	border-radius: 5rem;
-// 	padding: .9rem;
-// }
-
-// .page-item-27 {
-// 	position: fixed;
-// 	bottom: 3rem;
-// 	right: 50%;
-// 	background-color: purple;
-// 	border-radius: 5rem;
-// 	padding: .9rem;
-// }
-
 .main-navigation {
 	position: fixed;
 	display: flex;
 	top: 0;
 	width: 100%;
 	height: 5rem;
-	background-color: rgb(255, 255, 255);
+	background-color: $color__black-trans;
 	align-items: center;
 	justify-content: space-around;
 	z-index: 2;
@@ -120,7 +96,7 @@ ul {
 	
 	a {
 		display: block;
-		text-decoration: none;
+		// text-decoration: none;
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
@@ -159,12 +135,10 @@ ul {
 	}
 
 	.nav-previous {
-		float: left;
 		width: 50%;
 	}
 
 	.nav-next {
-		float: right;
 		text-align: right;
 		width: 50%;
 	}

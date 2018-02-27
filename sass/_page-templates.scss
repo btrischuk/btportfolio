@@ -15,9 +15,12 @@
 }
 
 //project page
-.site-content {
+.page-template-about, .page-template-projects .site-content {
 background:   
 url(../../images/background.png);
+p, h2 {
+  color: white;
+}
 }
 
 .project-content  {
@@ -69,13 +72,11 @@ url(../../images/background.png);
 
 //About page
 .page-template-about {
-  .entry-titl {
-    display: none;
-  }
+    margin-top: 5rem;
 }
 
 // Contact page
-.page-template-contact {
+.page-template-contact, .page-template-about {
   .entry-title {
     display: none;
   }
@@ -90,17 +91,7 @@ url(../../images/background.png);
     display: flex;
     justify-content: center;  
     padding-top: 5rem;
-    color: white;
-  }
-}
-form {
-  width: 500px;
-  margin: 0 auto;
-  p {
-    color:white;
-  }
-  input, textarea {
-    background-color: grey;
+    color: $color__background-body;
   }
 }
 

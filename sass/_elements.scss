@@ -8,13 +8,15 @@ html {
 }
 //transition hover on all 'a' tags
 a, .site-info .svg-inline--fa {
+	color: $color__background-body;
 	transition-property: font-size;
 	transition: $transition__main;
 
 }
 
 a:hover {
-font-size: 120%;
+// font-size: 120%;
+text-decoration: aquamarine;
 
 }
 

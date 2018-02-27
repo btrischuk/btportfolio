@@ -9,7 +9,7 @@
   display: flex;
 }
 
-.hero {
+.home, .hero {
   @include center-all;
   background: $color__background-gradient,
   url(../../images/squam-chief.jpg); 
@@ -18,7 +18,7 @@
   z-index: 5;
   width: 100vw;
   height: 100vh;
-  color: $color__text-second;
+  color: $color__background-body;
 }
 
 
