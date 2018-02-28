@@ -1,17 +1,31 @@
 .site-footer {
   background-color: transparent;
   position: fixed;
+  bottom: 2rem;
+  @include tablet {
   bottom: 5vh;
+  }
   .site-info {
     display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+    margin-left: 1.5rem;
+    @include tablet {
     flex-direction: column;
+    }
     .svg-inline--fa {
+      font-size: 3rem;
+      @include tablet{
       font-size: 4rem;
       margin: 0 0 1rem 1rem;
       padding: .5rem;
+      }
     }
   }
   .site-info a {
+    @include tablet {
     width: 5rem;
+    }
   }
 }

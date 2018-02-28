@@ -13,17 +13,17 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: blue;
+		// background-color: blue;
 
 
 	}
 
 	&:focus {
-		outline: thin dotted;
+		// outline: thin dotted;
 	}
 	&:hover,
 	&:active {
-		outline: 5;
+		// outline: 5;
 	}
 }
 

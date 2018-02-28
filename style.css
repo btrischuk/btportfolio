@@ -427,12 +427,6 @@ a {
   color: #fff; }
   a:visited {
     color: #fff; }
-  a:hover, a:focus, a:active {
-    background-color: blue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 5; }
 
 /* Menus */
 .logo {
@@ -794,21 +788,38 @@ object {
 .site-footer {
   background-color: transparent;
   position: fixed;
-  bottom: 5vh; }
+  bottom: 2rem; }
+  @media (min-width: 600px) {
+    .site-footer {
+      bottom: 5vh; } }
   .site-footer .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 1.5rem; }
+    @media (min-width: 600px) {
+      .site-footer .site-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .site-footer .site-info .svg-inline--fa {
-      font-size: 4rem;
-      margin: 0 0 1rem 1rem;
-      padding: .5rem; }
-  .site-footer .site-info a {
-    width: 5rem; }
+      font-size: 3rem; }
+      @media (min-width: 600px) {
+        .site-footer .site-info .svg-inline--fa {
+          font-size: 4rem;
+          margin: 0 0 1rem 1rem;
+          padding: .5rem; } }
+  @media (min-width: 600px) {
+    .site-footer .site-info a {
+      width: 5rem; } }
 
 .menu ul {
   -webkit-box-orient: horizontal;
@@ -840,3 +851,9 @@ object {
   width: 100vw;
   height: 100vh;
   color: #fff; }
+
+h2 {
+  margin-bottom: 10rem; }
+  @media (min-width: 600px) {
+    h2 {
+      margin-bottom: 0; } }

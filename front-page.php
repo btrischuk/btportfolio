@@ -24,9 +24,9 @@ get_header(); ?>
       <?php endif; ?>
       
       <div class="hero">
-        <h1>Hello.</h1>
-        <h1>I'm Breckon.</h1>
-        <h2>I create websites.</h2>
+        <!-- <h1>Hello.</h1> -->
+				<h1>Breckon Trischuk</h1>
+        <h2>Web Developer</h2>
       </div>
 
 			<?php /* Start the Loop */ ?>
