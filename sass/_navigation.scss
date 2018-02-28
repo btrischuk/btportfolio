@@ -29,6 +29,23 @@ a {
 
 /* Menus */
 
+.mobile-menu {
+	background-color: $color__black-trans;
+	li {
+		list-style: none;
+		}
+	@include tablet {
+		visibility: hidden;
+	}
+}
+
+.primary-menu {
+	visibility: hidden;
+	@include tablet {
+	visibility: visible;
+	}
+}
+
 .logo {
 	position: fixed;  
 	top: 0;
@@ -44,7 +61,7 @@ ul {
 
 }
 
-.main-navigation {
+.main-navigation, .mobile-menu {
 	position: fixed;
 	display: flex;
 	top: 0;

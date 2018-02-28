@@ -429,6 +429,20 @@ a {
     color: #fff; }
 
 /* Menus */
+.mobile-menu {
+  background-color: black; }
+  .mobile-menu li {
+    list-style: none; }
+  @media (min-width: 600px) {
+    .mobile-menu {
+      visibility: hidden; } }
+
+.primary-menu {
+  visibility: hidden; }
+  @media (min-width: 600px) {
+    .primary-menu {
+      visibility: visible; } }
+
 .logo {
   position: fixed;
   top: 0;
@@ -437,7 +451,7 @@ a {
   width: 100px;
   z-index: 3; }
 
-.main-navigation {
+.main-navigation, .mobile-menu {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,37 +459,39 @@ a {
   top: 0;
   width: 100%;
   height: 5rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   z-index: 2; }
-  .main-navigation ul {
+  .main-navigation ul, .mobile-menu ul {
     display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
-    .main-navigation ul ul {
+    .main-navigation ul ul, .mobile-menu ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       position: absolute;
       top: 1.5rem;
       left: -999rem; }
       .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
+      .main-navigation ul ul li.focus > ul, .mobile-menu ul ul li:hover > ul,
+      .mobile-menu ul ul li.focus > ul {
         left: 100%; }
-      .main-navigation ul ul a {
+      .main-navigation ul ul a, .mobile-menu ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
+    .main-navigation ul li.focus > ul, .mobile-menu ul li:hover > ul,
+    .mobile-menu ul li.focus > ul {
       left: auto; }
-  .main-navigation a {
+  .main-navigation a, .mobile-menu a {
     display: block;
     padding-right: 2rem;
     padding-left: 2rem; }
-  .main-navigation .page-item-34 {
+  .main-navigation .page-item-34, .mobile-menu .page-item-34 {
     display: none; }
 
 /* Small menu. */
