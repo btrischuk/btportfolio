@@ -13,6 +13,7 @@
     margin-left: 1.5rem;
     @include tablet {
     flex-direction: column;
+    width: 5rem;
     }
     .svg-inline--fa {
       font-size: 3rem;

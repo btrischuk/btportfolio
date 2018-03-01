@@ -40,6 +40,13 @@ get_header(); ?>
     <p class= "project-description"><?php echo CFS()->get( 'project_description5' );	?></p>
     <img class= "project-image" src= '<?php echo CFS()->get( 'project_image5' );	?>'>
     <a class="project-buton" href="https://btrischuk.github.io/instanews/">Explore Site!</a></p>
+  </div>
+  
+  <div class="entry-header ">
+    <h2 class= "project-title"><?php echo CFS()->get( 'project_title6' );	?></h2>
+    <p class= "project-description"><?php echo CFS()->get( 'project_description6' );	?></p>
+    <img class= "project-image" src= '<?php echo CFS()->get( 'project_image6' );	?>'>
+    <a class="project-buton" href="https://btrischuk.github.io/perfect-paddles/">Explore Site!</a></p>
 	</div>
 				
 

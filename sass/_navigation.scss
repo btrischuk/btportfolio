@@ -31,6 +31,9 @@ a {
 
 .mobile-menu {
 	background-color: $color__black-trans;
+	// a {
+	// 	text-decoration: none;
+	// }
 	li {
 		list-style: none;
 		}
@@ -41,6 +44,9 @@ a {
 
 .primary-menu {
 	visibility: hidden;
+	// a {
+	// 	text-decoration: underline;
+	// }
 	@include tablet {
 	visibility: visible;
 	}
@@ -49,6 +55,8 @@ a {
 .logo {
 	position: fixed;  
 	top: 0;
+	left: 2rem;
+	text-transform: uppercase;
   background-size: 100px 100px;
   height: 80px;
   width: 100px;

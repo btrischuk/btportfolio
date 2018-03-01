@@ -11,20 +11,35 @@ a, .site-info .svg-inline--fa {
 	color: $color__background-body;
 	transition-property: font-size;
 	transition: $transition__main;
-
+	text-decoration: none;
+	transition: text-decoration 1s ease;
 }
 
-a:hover {
-// font-size: 120%;
-text-decoration: aquamarine;
+li a { 
+	color: $color__background-body;
+	display: inline-block; 
+	margin: 0;
+	text-transform: uppercase; 
+}
 
+li a:after {
+  display: block;
+  content: '';
+  border-bottom: $color__border-main;  
+  transform: scaleX(0);  
+  transition: transform 0.2s ease-in-out;
+}
+li a:hover:after { 
+	transform: scaleX(1); 
 }
 
 .svg-inline--fa:hover {
-
-	border: $color__border-main;
-	border-radius: 5rem;
-	
+	border: none;
+	border-radius: none;
+	@include tablet {
+		border: $color__border-main;
+		border-radius: 5rem;
+	}
 }
 
 

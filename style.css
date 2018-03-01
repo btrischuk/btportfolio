@@ -297,15 +297,41 @@ a, .site-info .svg-inline--fa {
   -webkit-transition-property: font-size;
   transition-property: font-size;
   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  -webkit-transition: -webkit-text-decoration 1s ease;
+  transition: -webkit-text-decoration 1s ease;
+  transition: text-decoration 1s ease;
+  transition: text-decoration 1s ease, -webkit-text-decoration 1s ease; }
 
-a:hover {
-  -webkit-text-decoration: aquamarine;
-          text-decoration: aquamarine; }
+li a {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase; }
+
+li a:after {
+  display: block;
+  content: '';
+  border-bottom: 2px solid #007515;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out; }
+
+li a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
 
 .svg-inline--fa:hover {
-  border: 2px solid #007515;
-  border-radius: 5rem; }
+  border: none;
+  border-radius: none; }
+  @media (min-width: 600px) {
+    .svg-inline--fa:hover {
+      border: 2px solid #007515;
+      border-radius: 5rem; } }
 
 *,
 *:before,
@@ -446,6 +472,8 @@ a {
 .logo {
   position: fixed;
   top: 0;
+  left: 2rem;
+  text-transform: uppercase;
   background-size: 100px 100px;
   height: 80px;
   width: 100px;
@@ -777,7 +805,7 @@ object {
 .page-template-contact .coffee, .page-template-about .coffee {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   z-index: -1; }
 
 .page-template-contact .coffee-date, .page-template-about .coffee-date {
@@ -825,7 +853,8 @@ object {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column;
+        width: 5rem; } }
     .site-footer .site-info .svg-inline--fa {
       font-size: 3rem; }
       @media (min-width: 600px) {
