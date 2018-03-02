@@ -18,7 +18,25 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
-      <?php endif; ?>
+			<?php endif; ?>
+			
+			<div>
+				<p class="about-paragraph">
+					I am a Front End Developer with a strong focus on Wordpress, JavaScript, PHP, Html5, Css3, Sass, jQuery, and  Responsive Designed web pages.
+				</p>
+
+				<p class="about-paragraph">
+					Often I am described as a rock climber which everyone I ever tell seems to have a completely different perspective of what that entails. Instead of directly clearing the misconception, I feed my very sarcastic humour with various comments. This gives me great joy.  This lifestyle requires a high level of creativity and psych when one finds himself in the prairies, home of one climbable rock within a 500km range. Needless to say I now find myself living amongst the mountains.
+				</p>
+
+				<p class="about-paragraph">
+					I  am very grateful for this foundation as it has taught me a great deal regarding how to pursue a goal in the face of intimidation, and many hurdles. This mindset, allows me to transfer it in the world of programming.
+				</p>
+
+				<p class="about-paragraph">
+					I am currently pouring a greater amount of my pie-chart-percentages into my recently discovered passion of Software Development.
+				</p>
+			</div>
       
 
 			<?php /* Start the Loop */ ?>

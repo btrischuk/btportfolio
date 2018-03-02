@@ -44,15 +44,20 @@ a {
 
 .primary-menu {
 	visibility: hidden;
-	// a {
-	// 	text-decoration: underline;
-	// }
 	@include tablet {
 	visibility: visible;
 	}
 }
 
+.active-page {
+		border-bottom: green !important;
+		color: blue !important;
+}
+
+
 .logo {
+	display: flex;
+	align-items: center;
 	position: fixed;  
 	top: 0;
 	left: 2rem;

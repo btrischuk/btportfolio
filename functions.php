@@ -83,13 +83,21 @@ add_filter( 'stylesheet_uri', 'btportfolio_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function btportfolio_scripts() {
+	
 	wp_enqueue_style( 'btportfolio-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'btportfolio-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'jquery');
+
 	wp_enqueue_script( 'smooth-state');
+
 	wp_enqueue_script( 'smooth-state-functions');
+
+	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true);	
+
+	wp_enqueue_script( 'menu-toggle', get_template_directory_uri() . '/build/js/nav-bar.min.js', array('jquery'), false, true);
+
 
 
 	//if font awesome is a .js cdn link
