@@ -30,7 +30,7 @@ a {
 /* Menus */
 
 .mobile-menu {
-	background-color: $color__black-trans;
+	background-color: $color__black-solid;
 	// a {
 	// 	text-decoration: none;
 	// }
@@ -75,7 +75,7 @@ ul {
 	top: 0;
 	width: 100%;
 	height: 5rem;
-	background-color: $color__black-trans;
+	background-color: $color__black-solid;
 	align-items: center;
 	justify-content: space-around;
 	z-index: 2;

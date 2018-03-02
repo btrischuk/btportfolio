@@ -8,6 +8,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<div class="about-hero">
+				<img class= "about-home" src= '<?php echo CFS()->get( 'about_hero_image' );	?>'>
+			</div>	
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>

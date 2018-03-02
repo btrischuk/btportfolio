@@ -75,6 +75,12 @@ p, h2 {
     margin-top: 5rem;
 }
 
+p {
+  width: 60vw;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
 // Contact page
 .page-template-contact, .page-template-about {
   .entry-title {
