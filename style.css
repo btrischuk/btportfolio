@@ -43,6 +43,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -309,6 +324,29 @@ li a {
   display: inline-block;
   margin: 0;
   text-transform: uppercase; }
+
+li a:after {
+  display: block;
+  content: '';
+  border-bottom: 2px solid #007515;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out; }
+
+li a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+
+.svg-inline--fa:hover {
+  border: none;
+  border-radius: none; }
+  @media (min-width: 600px) {
+    .svg-inline--fa:hover {
+      border: 2px solid #007515;
+      border-radius: 5rem; } }
 
 *,
 *:before,
@@ -720,9 +758,9 @@ object {
       -ms-flex-pack: right;
           justify-content: right; }
 
-.page-template-about, .page-template-projects .site-content {
+.page-template-projects .site-content {
   background: url(../../images/background.png); }
-  .page-template-about p, .page-template-about h2, .page-template-projects .site-content p, .page-template-projects .site-content h2 {
+  .page-template-projects .site-content p, .page-template-projects .site-content h2 {
     color: white; }
 
 .project-content {
@@ -783,8 +821,11 @@ object {
   -webkit-box-shadow: 7px 0px 25px 3px rgba(0, 0, 0, 0.9);
   box-shadow: 7px 0px 25px 3px rgba(0, 0, 0, 0.9); }
 
-.page-template-about {
-  margin-top: 5rem; }
+.page-template-about .hero {
+  margin-top: 5rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0.9)), to(rgba(71, 71, 71, 0.7)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0, rgba(71, 71, 71, 0.7));
+  background-size: cover; }
 
 .about-paragraph {
   padding: 1rem 4rem;
@@ -878,8 +919,8 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(0, 0, 0, 0.9)), to(rgba(71, 71, 71, 0.7))), url(../../images/home.jpg);
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.9) 0, rgba(71, 71, 71, 0.7)), url(../../images/home.jpg);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0.9)), to(rgba(71, 71, 71, 0.7))), url(../../images/home.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0, rgba(71, 71, 71, 0.7)), url(../../images/home.jpg);
   background-size: cover;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -895,3 +936,7 @@ h2 {
   @media (min-width: 600px) {
     h2 {
       margin-bottom: 0; } }
+
+.home h1, .home h2 {
+  -webkit-animation: 1s ease-out 0s slideInFromLeft;
+          animation: 1s ease-out 0s slideInFromLeft; }

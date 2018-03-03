@@ -13,7 +13,7 @@ $color__background-body: #fff;
 $color__form-background: whitesmoke;
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
-$color__background-gradient: linear-gradient(-90deg,rgba(0, 0, 0, 0.9) 0,rgba(71, 71, 71, 0.7));
+$color__background-gradient: linear-gradient(90deg,rgba(0, 0, 0, 0.9) 0,rgba(71, 71, 71, 0.7));
 
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
@@ -43,3 +43,14 @@ $transition__main: all 0.2s ease-in-out;
 // Screen sizes
 $tablet-width: 600px;
 $desktop-width: 1000px;
+
+
+//keyframes
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

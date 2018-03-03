@@ -8,17 +8,18 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="about-hero">
+			<div class="hero">
 				<img class= "about-home" src= '<?php echo CFS()->get( 'about_hero_image' );	?>'>
-			</div>	
 
 		<?php if ( have_posts() ) : ?>
+			<div class="hero">
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
+
 			
 			<div>
 				<p class="about-paragraph">
@@ -37,7 +38,8 @@ get_header(); ?>
 					I am currently pouring a greater amount of my pie-chart-percentages into my recently discovered passion of Software Development.
 				</p>
 			</div>
-      
+
+			</div>	
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

@@ -28,6 +28,12 @@ h2 {
   }
 }
 
+.home {
+  h1, h2 {
+    animation: 1s ease-out 0s slideInFromLeft;
+  }
+}
+
 
 
 

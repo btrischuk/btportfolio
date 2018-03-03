@@ -15,7 +15,7 @@
 }
 
 //project page
-.page-template-about, .page-template-projects .site-content {
+.page-template-projects .site-content {
 background:   
 url(../../images/background.png);
 p, h2 {
@@ -71,8 +71,12 @@ p, h2 {
 
 
 //About page
-.page-template-about {
+.page-template-about .hero {
     margin-top: 5rem;
+    background: $color__background-gradient;
+    // url(../../images/home.jpg); 
+    background-size: cover; 
+
 }
 
 .about-paragraph {
