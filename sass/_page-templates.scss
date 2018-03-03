@@ -2,6 +2,12 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.entry-header .project-header {
+  width: 100vw;
+  margin: 0 auto;
+  @include center-all;
+}
+
 /* Front page */
 
 .home {
@@ -45,8 +51,8 @@ url(../../images/background.png);
 }
 
 .project-image {
-  height: 30rem;
-  width: 50rem;
+  height: 50vh;
+  width: 50vw;
   border: $color__border-main;
   border-radius: 4rem;
   -webkit-transition: $transition__main;
@@ -54,26 +60,34 @@ url(../../images/background.png);
   display: inline-block;
   max-width: 100%;
   position: relative;
+  @include tablet {
+    height: 30vh;
+    width: 50vw;
+  }
 }
 
 .project-description {
-  visibility: hidden;
+  @include tablet {
+    visibility: hidden;
+  }
 }
 
  .project-image:hover {
   .project-description {
-    transition: all .2s ease-in-out;
-    // transition-property: background-color, display;
-    visibility: visible;
     position: absolute;
     border-radius: 4rem;
-    bottom: -2px;
-    z-index: 2;
     @include center-all;
     margin: 0 auto;
     width: 100%;
     height: 100%;
     background-color: $color__black-trans;
+    @include tablet {
+      transition: all .2s ease-in-out;
+      // transition-property: background-color, display;
+      visibility: visible;
+      bottom: -2px;
+      z-index: 2;
+    }
   }
 }
 
@@ -82,13 +96,20 @@ url(../../images/background.png);
   justify-content: center;
   background-color: $color__brand-main;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 5rem auto 0;
   width: 8rem;
   padding: 1rem;
   border-radius: 5rem;
   -webkit-box-shadow: 7px 0px 25px 3px rgba(0,0,0,0.9);
   -moz-box-shadow: 7px 0px 25px 3px rgba(0,0,0,0.9);
   box-shadow: 7px 0px 25px 3px rgba(0,0,0,0.9);
+  @include tablet {
+    margin-top: 1rem;
+
+  }
+}
+.project-content .project-button:hover {
+  background-color: $color__brand-dark;
 }
 
 

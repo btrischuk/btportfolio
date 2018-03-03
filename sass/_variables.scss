@@ -5,6 +5,8 @@ $base__space-unit: 1.5rem;
 // Colors
 
 $color__brand-main: #007515;
+$color__brand-dark: #005310;
+
 
 $color__text-main: #404040;
 $color__text-second: rgba(216, 152, 15, 0.712);
@@ -48,15 +50,6 @@ $desktop-width: 1000px;
 //keyframes
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-150%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  100% {
     transform: translateX(-150%);
   }
   100% {

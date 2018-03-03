@@ -58,22 +58,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
-@-webkit-keyframes fadeIn {
-  100% {
-    -webkit-transform: translateX(-150%);
-            transform: translateX(-150%); }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); } }
-
-@keyframes fadeIn {
-  100% {
-    -webkit-transform: translateX(-150%);
-            transform: translateX(-150%); }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); } }
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -763,6 +747,19 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.entry-header .project-header {
+  width: 100vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /* Front page */
 .home {
   background-color: grey; }
@@ -812,8 +809,8 @@ object {
   margin-top: 5rem; }
 
 .project-image {
-  height: 30rem;
-  width: 50rem;
+  height: 50vh;
+  width: 50vw;
   border: 2px solid #007515;
   border-radius: 4rem;
   -webkit-transition: all 0.2s ease-in-out;
@@ -821,18 +818,18 @@ object {
   display: inline-block;
   max-width: 100%;
   position: relative; }
+  @media (min-width: 600px) {
+    .project-image {
+      height: 30vh;
+      width: 50vw; } }
 
-.project-description {
-  visibility: hidden; }
+@media (min-width: 600px) {
+  .project-description {
+    visibility: hidden; } }
 
 .project-image:hover .project-description {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  visibility: visible;
   position: absolute;
   border-radius: 4rem;
-  bottom: -2px;
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,6 +843,13 @@ object {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); }
+  @media (min-width: 600px) {
+    .project-image:hover .project-description {
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      visibility: visible;
+      bottom: -2px;
+      z-index: 2; } }
 
 .project-button {
   display: -webkit-box;
@@ -856,12 +860,18 @@ object {
           justify-content: center;
   background-color: #007515;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 5rem auto 0;
   width: 8rem;
   padding: 1rem;
   border-radius: 5rem;
   -webkit-box-shadow: 7px 0px 25px 3px rgba(0, 0, 0, 0.9);
   box-shadow: 7px 0px 25px 3px rgba(0, 0, 0, 0.9); }
+  @media (min-width: 600px) {
+    .project-button {
+      margin-top: 1rem; } }
+
+.project-content .project-button:hover {
+  background-color: #005310; }
 
 .page-template-about .hero {
   margin-top: 5rem;
@@ -973,10 +983,10 @@ object {
   height: 100vh;
   color: #fff; }
 
-h2 {
+.home h2 {
   margin-bottom: 10rem; }
   @media (min-width: 600px) {
-    h2 {
+    .home h2 {
       margin-bottom: 0; } }
 
 .home h1, .home h2 {
