@@ -18,9 +18,9 @@
 .page-template-projects .site-content {
 background:   
 url(../../images/background.png);
-p, h2 {
-  color: white;
-}
+  p, h2 {
+    color: white;
+  }
 }
 
 .project-content  {
@@ -33,29 +33,55 @@ p, h2 {
   flex-direction: column;
 }
 
-  .project-header {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    color: white;
-  }
-
-  .project-title {
-    margin-top: 5rem;
-  }
-
-  .project-image {
-    height: 30rem;
-    width: 50rem;
-    border: $color__border-main;
-    border-radius: 4rem;
-    -webkit-transition: $transition__main;
-    transition: $transition__main;
-    display: inline-block;
-    max-width: 100%;
+.project-header {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
 }
 
-.project-buton {
+.project-title {
+  margin-top: 5rem;
+}
+
+.project-image {
+  height: 30rem;
+  width: 50rem;
+  border: $color__border-main;
+  border-radius: 4rem;
+  -webkit-transition: $transition__main;
+  transition: $transition__main;
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  transition: all .2s ease-in-out;
+
+}
+
+.project-description {
+  visibility: hidden;
+}
+
+ .project-image:hover {
+  transition: all .2s ease-in-out;
+
+  .project-description {
+    transition: background-color .2s ease-in-out;
+    // transition-property: background-color, visibility;
+    visibility: visible;
+    position: absolute;
+    border-radius: 4rem;
+    bottom: -2px;
+    z-index: 2;
+    @include center-all;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: $color__black-trans;
+  }
+}
+
+.project-button {
   display: flex;
   justify-content: center;
   background-color: $color__brand-main;

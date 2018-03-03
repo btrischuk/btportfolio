@@ -58,6 +58,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
+@-webkit-keyframes fadeIn {
+  100% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes fadeIn {
+  100% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -803,9 +819,40 @@ object {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-  max-width: 100%; }
+  max-width: 100%;
+  position: relative;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
 
-.project-buton {
+.project-description {
+  visibility: hidden; }
+
+.project-image:hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .project-image:hover .project-description {
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    visibility: visible;
+    position: absolute;
+    border-radius: 4rem;
+    bottom: -2px;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); }
+
+.project-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

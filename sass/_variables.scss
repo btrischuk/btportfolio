@@ -54,3 +54,12 @@ $desktop-width: 1000px;
     transform: translateX(0);
   }
 }
+
+@keyframes fadeIn {
+  100% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
