@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 			
-			<div>
+			<div class="about=paragraph-container">
 				<p class="about-paragraph">
 					I am a Front End Developer with a strong focus on Wordpress, JavaScript, PHP, Html5, Css3, Sass, jQuery, and  Responsive Designed web pages.
 				</p>
