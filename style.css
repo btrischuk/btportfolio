@@ -502,7 +502,7 @@ a {
   background-size: 100px 100px;
   height: 80px;
   width: 100px;
-  z-index: 3; }
+  z-index: 7; }
 
 .main-navigation, .mobile-menu {
   position: fixed;
@@ -518,7 +518,7 @@ a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  z-index: 2; }
+  z-index: 6; }
   .main-navigation ul, .mobile-menu ul {
     display: none;
     list-style: none;
@@ -986,7 +986,3 @@ object {
   @media (min-width: 600px) {
     .home h2 {
       margin-bottom: 0; } }
-
-.home h1, .home h2 {
-  -webkit-animation: 1s ease-out 0s slideInFromLeft;
-          animation: 1s ease-out 0s slideInFromLeft; }

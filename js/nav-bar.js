@@ -1,4 +1,6 @@
 (function ($) {
+  $('.home').hide();
+  $('.home').fadeIn(900);
 
   $('.toggle-menu-button').on('click', function () {
     $('.menu-list').toggleClass('toggle-nav');
@@ -24,5 +26,7 @@
   // if ($('body').hasClass('page-id-61')) {
   //   $( '.menu-item--connect' ).addClass( 'active-page' );
   // }
+
+  
 
 })(jQuery);

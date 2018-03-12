@@ -65,7 +65,7 @@ a {
   background-size: 100px 100px;
   height: 80px;
   width: 100px;
-	z-index: 3;
+	z-index: 7;
 }
 .menu ul li a {
 	
@@ -83,7 +83,7 @@ ul {
 	background-color: $color__black-solid;
 	align-items: center;
 	justify-content: space-around;
-	z-index: 2;
+	z-index: 6;
 	
 	ul {
 		display: none;
