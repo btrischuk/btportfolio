@@ -29,29 +29,95 @@ a {
 
 /* Menus */
 
-.mobile-menu {
-	background-color: $color__black-solid;
-	// a {
-	// 	text-decoration: none;
-	// }
+.menu {
+	display: none;
+}
+
+// .mobile-menu {
+// 	background-color: $color__black-solid;
+// 	// a {
+// 	// 	text-decoration: none;
+// 	// }
+// 	li {
+// 		list-style: none;
+// 		}
+// 	@include tablet {
+// 		visibility: hidden;
+// 	}
+// }
+
+.main-navigation {
+	visibility: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 	li {
 		list-style: none;
 		}
 	@include tablet {
-		visibility: hidden;
+		flex-direction: row;
+		visibility: visible;
+		justify-content: center;
+	}
+	.toggle-menu-button {
+		visibility: visible;
+		position: absolute;
+		right: 3rem;
+		z-index: 2;
+		font-size: 1.5rem;
+		@include tablet {
+			visibility: hidden;
+		}
 	}
 }
 
-.primary-menu {
-	visibility: hidden;
-	@include tablet {
+.main-navigation, .drop-menu, li {
+
+	// transform: translate(-50%, -50%);      
+	// transition: all .4s ease-in-out;
+	// transition-duration: 1s,.5s,.3s,.3s,.3s,.3s,.3s;
+}
+
+.main-navigation .toggle-nav {
 	visibility: visible;
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+	width: 100vw;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	font-size: 2rem;
+	padding-top: 4rem;
+	transition: all 0.3s ease-in-out; 
+
+	@include tablet {
+		flex-direction: row;
+		font-size: 1rem;
+		position: relative;
+		align-content: center;
+		justify-content: space-around;
+
+
+
+		// align-items: center;
+	}
+	ul {
+		display: flex;
+
+	}
+	li {
+		transition: all 0.3s ease-in-out; 
 	}
 }
 
-.active-page {
-		border-bottom: green !important;
-		color: blue !important;
+#primary-menu .main-navigation ul {
+	display: block;
+}
+
+.main-navigation .primary-menu .page-item-2 .menu-link-about .active-page {
+		border-bottom: 3px solid green;
+		color: blue;
 }
 
 
@@ -62,7 +128,7 @@ a {
 	top: 0;
 	left: 2rem;
 	text-transform: uppercase;
-  background-size: 100px 100px;
+  // background-size: 100px 100px;
   height: 80px;
   width: 100px;
 	z-index: 7;
@@ -74,7 +140,7 @@ ul {
 
 }
 
-.main-navigation, .mobile-menu {
+.main-navigation {
 	position: fixed;
 	display: flex;
 	top: 0;
@@ -86,7 +152,7 @@ ul {
 	z-index: 6;
 	
 	ul {
-		display: none;
+		display: flex;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -146,14 +212,14 @@ ul {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
+// @media screen and (min-width: 768px) {
+// 	.menu-toggle {
+// 		display: none;
+// 	}
+// 	.main-navigation ul {
+// 		display: block;
+// 	}
+// }
 
 .comment-navigation,
 .posts-navigation,

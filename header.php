@@ -31,7 +31,7 @@
 					<div class="logo-container">
 						<a href="<?php echo get_home_url(); ?>">
 							<div class="logo">
-								<p>Breckon Trischuk</p>
+								<p>B.T.</p>
 							</div>
 						</a>
 						</div>
@@ -39,18 +39,21 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+				<!-- <nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
 			
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 
-				<div class="mobile-menu">
-						<li class="page_item page-item-2"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about me' ) ) ); ?>">About me</a></li>
+				<div class="main-navigation">
+					<button id="toggle-menu-button" class="toggle-menu-button">&#9776;</button>
+					<ul id="drop-menu" class="drop-menu">
+						<li class="page_item page-item-2"><a class="menu-link-about" href="<?php echo esc_url( get_permalink( get_page_by_title( 'about me' ) ) ); ?>">About me</a></li>
 						<li class="page_item page-item-27"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'my Projects' ) ) ); ?>">My Projects</a></li>
 						<li class="page_item page-item-31"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'contact me' ) ) ); ?>">Contact Me</a></li>
-					</div>
+					</ul>
+				</div>
 
 			</header><!-- #masthead -->
 
