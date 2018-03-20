@@ -47,10 +47,6 @@ url(../../images/background.png);
   color: white;
 }
 
-.project-title {
-  margin-top: 5rem;
-}
-
 .project-image {
   height: 50vh;
   width: 90vw;
@@ -70,16 +66,31 @@ url(../../images/background.png);
   }
 }
 
-.project-description {
+.mobile-project-info {
+  text-align: center;
+  padding-top: 4rem;
   @include tablet {
     visibility: hidden;
   }
 }
 
+.tablet-project-info {
+  visibility: hidden;
+  margin-top: 4rem;
+  text-align: center;
+  @include tablet {
+    visibility: visible;
+  }
+}
+
+.project-description {
+  visibility: hidden;
+}
+
  .project-image:hover {
   .project-description {
     position: absolute;
-    border-radius: 3rem;
+    border-radius: 4rem;
     @include center-all;
     margin: 0 auto;
     width: 100%;
@@ -104,9 +115,9 @@ url(../../images/background.png);
   width: 8rem;
   padding: 1rem;
   border-radius: 5rem;
-  -webkit-box-shadow: 7px 0px 25px 3px rgba(0,0,0,0.9);
-  -moz-box-shadow: 7px 0px 25px 3px rgba(0,0,0,0.9);
-  box-shadow: 7px 0px 25px 3px rgba(0,0,0,0.9);
+  -webkit-box-shadow: $color__text-shadow-thick;
+  -moz-box-shadow: $color__text-shadow-thick;
+  box-shadow: $color__text-shadow-thick;
   @include tablet {
     margin-top: 1rem;
 

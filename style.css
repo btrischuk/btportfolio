@@ -862,9 +862,6 @@ object {
   font-size: 2rem;
   color: white; }
 
-.project-title {
-  margin-top: 5rem; }
-
 .project-image {
   height: 50vh;
   width: 90vw;
@@ -882,13 +879,27 @@ object {
       height: 60vh;
       width: 70vw; } }
 
-@media (min-width: 600px) {
-  .project-description {
-    visibility: hidden; } }
+.mobile-project-info {
+  text-align: center;
+  padding-top: 4rem; }
+  @media (min-width: 600px) {
+    .mobile-project-info {
+      visibility: hidden; } }
+
+.tablet-project-info {
+  visibility: hidden;
+  margin-top: 4rem;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .tablet-project-info {
+      visibility: visible; } }
+
+.project-description {
+  visibility: hidden; }
 
 .project-image:hover .project-description {
   position: absolute;
-  border-radius: 3rem;
+  border-radius: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

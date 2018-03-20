@@ -7,6 +7,9 @@ get_header(); ?>
 
 <div class="project-content">
 
+  <p class="mobile-project-info">Click on the project's image for breif description!</p>
+  <p class="tablet-project-info">Hover on the project's image for breif description!</p>
+
 	<div class="entry-header ">
     <h2 class= "project-title"><?php echo CFS()->get( 'project_title' );	?></h2>
     <div class= "project-image">

@@ -23,10 +23,10 @@ get_header(); ?>
 				</header>
       <?php endif; ?>
       
-      <div class="hero">
+      <div id="hero" class="hero" class="hidden">
         <!-- <h1>Hello.</h1> -->
-				<h1>Breckon Trischuk</h1>
-        <h2>Front-End Web Developer</h2>
+				<h1 class="title">Breckon Trischuk</h1>
+        <h2 class="title">Front-End Web Developer</h2>
       </div>
 
 			<?php /* Start the Loop */ ?>

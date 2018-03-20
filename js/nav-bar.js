@@ -1,6 +1,12 @@
 (function ($) {
-  $('.home').hide();
-  $('.home').fadeIn(900);
+
+  $('.title').hide();
+  $('.title').fadeIn(1000);
+
+
+  // $('.project-image').on('click', function() {
+  //   $('.project-image').toggleClass('project-description');
+  // });
 
 // Toggle menu on mobile/tablet screens
   $('.toggle-menu-button').on('click', function () {
@@ -27,6 +33,8 @@
   if ($('body').hasClass('page-id-61')) {
     $( '.menu-item--connect' ).addClass( 'active-page' );
   }
+
+
 
   
 
