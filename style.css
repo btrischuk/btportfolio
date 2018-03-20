@@ -477,6 +477,9 @@ a {
           flex-direction: column; }
   .main-navigation ul {
     visibility: hidden; }
+    @media (min-width: 600px) {
+      .main-navigation ul {
+        visibility: visible; } }
   .main-navigation li {
     list-style: none; }
   @media (min-width: 600px) {

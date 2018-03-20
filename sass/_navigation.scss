@@ -49,6 +49,9 @@ a {
 .main-navigation {
 	ul {
 	visibility: hidden;
+		@include tablet {
+			visibility: visible;
+		}
 	}
 	position: relative;
 	display: flex;
