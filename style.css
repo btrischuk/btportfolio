@@ -467,7 +467,6 @@ a {
   display: none; }
 
 .main-navigation {
-  visibility: hidden;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,6 +475,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .main-navigation ul {
+    visibility: hidden; }
   .main-navigation li {
     list-style: none; }
   @media (min-width: 600px) {
@@ -497,6 +498,9 @@ a {
     @media (min-width: 600px) {
       .main-navigation .toggle-menu-button {
         visibility: hidden; } }
+
+#toggle-menu-button:focus {
+  outline: none; }
 
 .main-navigation .toggle-nav {
   visibility: visible;
@@ -861,12 +865,15 @@ object {
 .project-image {
   height: 50vh;
   width: 90vw;
-  border: 2px solid #007515;
+  border: none;
   border-radius: 4rem;
   -webkit-transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
   position: relative; }
+  .project-image img {
+    -webkit-box-shadow: 0px 0px 15px 6px black;
+            box-shadow: 0px 0px 15px 6px black; }
   @media (min-width: 600px) {
     .project-image {
       height: 60vh;
@@ -878,7 +885,7 @@ object {
 
 .project-image:hover .project-description {
   position: absolute;
-  border-radius: 4rem;
+  border-radius: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -893,7 +900,7 @@ object {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   visibility: visible;
-  bottom: -2px;
+  bottom: 0px;
   z-index: 2; }
   @media (min-width: 600px) {
     .project-image:hover .project-description {

@@ -26,7 +26,7 @@ get_header(); ?>
       <div class="hero">
         <!-- <h1>Hello.</h1> -->
 				<h1>Breckon Trischuk</h1>
-        <h2>Web Developer</h2>
+        <h2>Front-End Web Developer</h2>
       </div>
 
 			<?php /* Start the Loop */ ?>
