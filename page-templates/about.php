@@ -23,19 +23,19 @@ get_header(); ?>
 			
 			<div class="about-paragraph-container">
 				<p class="about-paragraph">
-					I am a Front End Developer with a strong focus on Wordpress, JavaScript, PHP, Html5, Css3, Sass, jQuery, and  Responsive Designed web pages.
+					I am a Front End Developer with a strong focus on WordPress, JavaScript, PHP, Html5, Css3, Sass, JQuery, and  Responsive Designed web pages.
 				</p>
 
 				<p class="about-paragraph">
-					Often I am described as a rock climber which everyone I ever tell seems to have a completely different perspective of what that entails. Instead of directly clearing the misconception, I feed my very sarcastic humour with various comments. This gives me great joy.  This lifestyle requires a high level of creativity and psych when one finds himself in the prairies, home of one climbable rock within a 500km range. Needless to say I now find myself living amongst the mountains.
+				Saskatchewan-rockclimber. Everyone I ever tell seems to have a completely different perspective of what that entails.  You can just image the misconceptions that description of myself brings. Instead of directly clarifying this, I feed my very sarcastic humor with various comments. This gives me great joy.  Living the lifestyle of a rock climber requires a high level of creativity and psych when one finds himself born in the prairies, home of one lonely climbable rock within a 500km range. Needless to say I now find myself living amongst the mountains.
 				</p>
 
 				<p class="about-paragraph">
-					I  am very grateful for this foundation as it has taught me a great deal regarding how to pursue a goal in the face of intimidation, and many hurdles. This mindset, allows me to transfer it in the world of programming.
+					I  am very grateful for this foundation as it has taught me a great deal regarding how to pursue a goal in the face of intimidation, lack of resources, and many hurdles. I am able to transfer this determined mindset into the world of programming. 
 				</p>
 
 				<p class="about-paragraph">
-					I am currently pouring a greater amount of my pie-chart-percentages into my recently discovered passion of Software Development.
+					My passion for software development continues to grow and take a greater bite out of my passion-pie-chart. 
 				</p>
 			</div>
 

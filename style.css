@@ -895,7 +895,9 @@ object {
       visibility: visible; } }
 
 .project-description {
-  visibility: hidden; }
+  visibility: hidden;
+  padding: 4rem;
+  text-align: center; }
 
 .project-image:hover .project-description {
   position: absolute;
