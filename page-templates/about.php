@@ -12,7 +12,6 @@ get_header(); ?>
 				<img class= "about-home" src= '<?php echo CFS()->get( 'about_hero_image' );	?>'>
 
 		<?php if ( have_posts() ) : ?>
-			<div class="hero">
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -38,8 +37,6 @@ get_header(); ?>
 					My passion for software development continues to grow and take a greater bite out of my passion-pie-chart. 
 				</p>
 			</div>
-
-			</div>	
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
