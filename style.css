@@ -985,15 +985,15 @@ object {
     position: fixed;
     height: 150vh;
     z-index: -1; }
-  .page-template-contact .coffee-date {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .page-template-contact .coffee-date, .page-template-contact .contact-info {
+    text-align: center;
+    width: 30rem;
+    margin: 0 auto;
     padding-top: 5rem;
     color: #fff; }
+    .page-template-contact .coffee-date a, .page-template-contact .contact-info a {
+      color: #007515;
+      text-decoration: underline; }
 
 div.wpcf7-response-output {
   margin: 0 auto; }

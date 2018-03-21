@@ -181,11 +181,16 @@ url(../../images/background.png);
     height: 150vh;
     z-index: -1;
   }
-  .coffee-date {
-    display: flex;
-    justify-content: center;  
+  .coffee-date, .contact-info {
+    text-align: center;
+    width: 30rem;
+    margin: 0 auto;
     padding-top: 5rem;
     color: $color__background-body;
+    a {
+      color: $color__brand-main;
+      text-decoration: underline;
+    }
   }
 }
 div.wpcf7-response-output {
