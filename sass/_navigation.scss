@@ -33,19 +33,6 @@ a {
 	display: none;
 }
 
-// .mobile-menu {
-// 	background-color: $color__black-solid;
-// 	// a {
-// 	// 	text-decoration: none;
-// 	// }
-// 	li {
-// 		list-style: none;
-// 		}
-// 	@include tablet {
-// 		visibility: hidden;
-// 	}
-// }
-
 .main-navigation {
 	ul {
 	visibility: hidden;
@@ -108,10 +95,6 @@ a {
 		position: relative;
 		align-content: center;
 		justify-content: space-around;
-
-
-
-		// align-items: center;
 	}
 	ul {
 		display: flex;
@@ -125,10 +108,12 @@ a {
 #primary-menu .main-navigation ul {
 	display: block;
 }
-
-.main-navigation .primary-menu .page-item-2 .menu-link-about .active-page {
-		border-bottom: 3px solid green;
-		color: blue;
+.main-navigation, .menu-link-about .menu-link-projects .menu-link-contact {
+	.active-page  {
+		color:green;
+		// border-bottom: 3px solid green;
+		// 2px solid #007515;
+	}
 }
 
 
@@ -222,15 +207,6 @@ ul {
 .main-navigation.toggled ul {
 	display: block;
 }
-
-// @media screen and (min-width: 768px) {
-// 	.menu-toggle {
-// 		display: none;
-// 	}
-// 	.main-navigation ul {
-// 		display: block;
-// 	}
-// }
 
 .comment-navigation,
 .posts-navigation,

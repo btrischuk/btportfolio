@@ -548,9 +548,8 @@ a {
 #primary-menu .main-navigation ul {
   display: block; }
 
-.main-navigation .primary-menu .page-item-2 .menu-link-about .active-page {
-  border-bottom: 3px solid green;
-  color: blue; }
+.main-navigation .active-page, .menu-link-about .menu-link-projects .menu-link-contact .active-page {
+  color: green; }
 
 .logo {
   display: -webkit-box;
