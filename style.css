@@ -1099,4 +1099,5 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, .wpcf7-response-outpu
   background: url(../../images/dead-end.jpg) no-repeat; }
   .error404 .site-main {
     width: 30rem;
-    margin: 10rem auto; }
+    margin: 10rem auto;
+    text-align: center; }

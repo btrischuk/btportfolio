@@ -16,11 +16,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Uh-Oh! Wires must be crossed!' ); ?></h1>
+					<h1 class="page-title"><?php echo esc_html( 'Uh-Oh!' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'Uh-Oh, Looks like you took a wrong turn somewhere...' ); ?></p>
+					<p><?php echo esc_html( 'Looks like you took a wrong turn somewhere...' ); ?></p>
 					<a href="<?php echo get_home_url(); ?>"> Click here to enter the portal to safety!</a>
 
 
