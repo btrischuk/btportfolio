@@ -992,7 +992,7 @@ object {
     padding-top: 5rem;
     color: #fff; }
     .page-template-contact .coffee-date a, .page-template-contact .contact-info a {
-      color: #007515;
+      color: lightblue;
       text-decoration: underline; }
 
 div.wpcf7-response-output {
@@ -1095,4 +1095,8 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, .wpcf7-response-outpu
       margin-bottom: 0; } }
 
 .error404 {
-  background-color: green; }
+  padding-top: 10rem;
+  background: url(../../images/dead-end.jpg) no-repeat; }
+  .error404 .site-main {
+    width: 30rem;
+    margin: 10rem auto; }
