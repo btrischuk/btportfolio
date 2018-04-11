@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package btportfolio
+ * @package portfolio
  */
 
 get_header(); ?>

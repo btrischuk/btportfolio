@@ -2,10 +2,11 @@
 .error404 {
   padding-top: 10rem;
   background:   
-  url(../../images/dead-end.jpg) no-repeat;
+  url(../../images/dead-end.jpg) no-repeat,
+  url(../../images/background.png);
 
 
-      .site-main {
+  .site-main {
     width: 30rem;
     margin: 10rem auto;
     text-align: center;

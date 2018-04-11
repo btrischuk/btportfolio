@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package btportfolio
+ * @package portfolio
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function btportfolio_body_classes( $classes ) {
+function portfolio_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,9 +19,9 @@ function btportfolio_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'btportfolio_body_classes' );
+add_filter( 'body_class', 'portfolio_body_classes' );
 
-function btportfolio_login_logo() {
+function portfolio_login_logo() {
 	echo '<style type="text/css">                                                                   
 			#login h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/red-panda.jpg) !important; 
 			background-size: 265px 250px;
@@ -39,7 +39,7 @@ function front_page_hero_css() {
 		return;
 	}
 	
-$image = CFS()->get('front_header_image');
+// $image = CFS()->get('front_header_image');
 
 if ( ! $image ) {
 	return;
@@ -52,6 +52,6 @@ $front_hero_css = ".hero {
 	min-height: 90vh;
 }";
 
-wp_add_inline_style( 'btportfolio', $front_hero_css);
+wp_add_inline_style( 'portfolio', $front_hero_css);
 }
 add_action( 'wp_enqueue_scripts', 'front_page_hero_css' );

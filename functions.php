@@ -1,17 +1,17 @@
 <?php
 /**
- * btportfolio functions and definitions.
+ * portfolio functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package btportfolio
+ * @package portfolio
  */
 
-if ( ! function_exists( 'btportfolio' ) ) :
+if ( ! function_exists( 'portfolio' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function btportfolio() {
+function portfolio() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -36,25 +36,25 @@ function btportfolio() {
 	) );
 
 }
-endif; // btportfolio
-add_action( 'after_setup_theme', 'btportfolio' );
+endif; // portfolio
+add_action( 'after_setup_theme', 'portfolio' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * @global int $content_width
  */
-function btportfolio_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'btportfolio_content_width', 640 );
+function portfolio_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'portfolio_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'btportfolio_content_width', 0 );
+add_action( 'after_setup_theme', 'portfolio_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function btportfolio_widgets_init() {
+function portfolio_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Sidebar' ),
 		'id'            => 'sidebar-1',
@@ -65,28 +65,28 @@ function btportfolio_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'btportfolio_widgets_init' );
+add_action( 'widgets_init', 'portfolio_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
-function btportfolio_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
+function portfolio_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
 
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'btportfolio_minified_css', 10, 2 );
+add_filter( 'stylesheet_uri', 'portfolio_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
  */
-function btportfolio_scripts() {
+function portfolio_scripts() {
 	
-	wp_enqueue_style( 'btportfolio-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'portfolio-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'btportfolio-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'portfolio-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'jquery');
 
@@ -107,7 +107,7 @@ function btportfolio_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'btportfolio_scripts' );
+add_action( 'wp_enqueue_scripts', 'portfolio_scripts' );
 
 /**
  * Custom template tags for this theme.

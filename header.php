@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package btportfolio
+ * @package portfolio
  */
 
 ?><!DOCTYPE html>

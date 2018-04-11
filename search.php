@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package btportfolio
+ * @package portfolio
  */
 
 get_header(); ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php btportfolio_numbered_pagination(); ?>
+			<?php portfolio_numbered_pagination(); ?>
 
 		<?php else : ?>
 

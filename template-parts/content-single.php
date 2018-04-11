@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package btportfolio
+ * @package portfolio
  */
 
 ?>
@@ -16,7 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php btportfolio_posted_on(); ?> / <?php btportfolio_comment_count(); ?> / <?php btportfolio_posted_by(); ?>
+			<?php portfolio_posted_on(); ?> / <?php portfolio_comment_count(); ?> / <?php portfolio_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -31,6 +31,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php btportfolio_entry_footer(); ?>
+		<?php portfolio_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

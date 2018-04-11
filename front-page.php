@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package btportfolio
+ * @package portfolio
  */
 /* Template Name: front-page */ 
 

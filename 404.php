@@ -6,7 +6,7 @@
  * 
  *   * Template Name: error404
  *
- * @package btportfolio
+ * @package portfolio
  */
 
 get_header(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
 					<a href="<?php echo get_home_url(); ?>"> Click here to enter the portal to safety!</a>
 
 
-					<?php if ( btportfolio_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<?php if ( portfolio_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
 						<ul>

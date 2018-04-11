@@ -1096,7 +1096,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, .wpcf7-response-outpu
 
 .error404 {
   padding-top: 10rem;
-  background: url(../../images/dead-end.jpg) no-repeat; }
+  background: url(../../images/dead-end.jpg) no-repeat, url(../../images/background.png); }
   .error404 .site-main {
     width: 30rem;
     margin: 10rem auto;

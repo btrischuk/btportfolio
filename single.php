@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package btportfolio
+ * @package portfolio
  */
 
 get_header(); ?>

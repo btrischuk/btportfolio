@@ -2,7 +2,7 @@
 /**
  * The template for displaying comments.
  *
- * @package btportfolio
+ * @package portfolio
  */
 
 /*
@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'callback' => 'btportfolio_comment_list'
+					'callback' => 'portfolio_comment_list'
 				) );
 			?>
 		</ol><!-- .comment-list -->
