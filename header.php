@@ -50,7 +50,7 @@
 					<button id="toggle-menu-button" class="toggle-menu-button">&#9776;</button>
 					<ul id="drop-menu" class="drop-menu">
 						<li class="page_item page-item-2"><a class="menu-link-about" href="<?php echo esc_url( get_permalink( get_page_by_title( 'about me' ) ) ); ?>">About me</a></li>
-						<li class="page_item page-item-27"><a class="menu-link-projects" href="<?php echo esc_url( get_permalink( get_page_by_title( 'my Projects' ) ) ); ?>">My Projects</a></li>
+						<li class="page_item page-item-27"><a class="menu-link-projects" href="<?php echo esc_url( get_permalink( get_page_by_title( 'projects' ) ) ); ?>">My Projects</a></li>
 						<li class="page_item page-item-31"><a class="menu-link-contact" href="<?php echo esc_url( get_permalink( get_page_by_title( 'contact me' ) ) ); ?>">Contact Me</a></li>
 					</ul>
 				</div>

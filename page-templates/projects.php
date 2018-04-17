@@ -7,18 +7,20 @@ get_header(); ?>
 
 <div class="project-content">
 
-  <p class="mobile-project-info">Click on the project's image for breif description!</p>
-  <p class="tablet-project-info">Hover on the project's image for breif description!</p>
+  <p class="mobile-project-info">Click on the project's image for brief description!</p>
+  <p class="tablet-project-info">Hover on the project's image for brief description!</p>
+
 
 	<div class="entry-header ">
-    <h2 class= "project-title"><?php echo CFS()->get( 'project_title' );	?></h2>
+    <h1 class= "project-title"><?php echo CFS()->get( 'project_title' ); ?></h1>
     <div class= "project-image">
       <img class= "project-image" src= '<?php echo CFS()->get( 'project_image' );	?>'>
       <p class= "project-description"><?php echo CFS()->get( 'project_description' );	?></p>
     </div>
-    <a class="project-button" href="https://github.com/redacademy/lovesea-fall-2017/tree/master/themes/lovesea">Explore Site!</a></p>
+    <a class="project-button" href="http://lovesea.van.cp.academy.red/">Explore Staged Site!</a></p>
+    <a class="project-button" href="https://github.com/redacademy/lovesea-fall-2017/tree/master/themes/lovesea">The Code!</a></p>
   </div>
-          
+  
   <div class="entry-header ">
     <h2 class= "project-title"><?php echo CFS()->get( 'project_title2' );	?></h2>
     <div class= "project-image">

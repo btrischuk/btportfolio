@@ -10,15 +10,15 @@
 
 /* Front page */
 
-.home {
-  background-color: grey;
-}
+// .home {
+//   background-color: grey;
+// }
 
-.widget-area {
-  display: inline;
-  text-align: right;
-  justify-content: right;
-}
+// .widget-area {
+//   display: inline;
+//   text-align: right;
+//   justify-content: right;
+// }
 
 //project page
 .page-template-projects .site-content {
@@ -45,6 +45,10 @@ url(../../images/background.png);
   justify-content: center;
   font-size: 2rem;
   color: white;
+}
+
+.site-description {
+  margin: 0;
 }
 
 .project-image {
@@ -113,6 +117,7 @@ url(../../images/background.png);
   justify-content: center;
   background-color: $color__brand-main;
   text-decoration: none;
+  text-align: center;
   margin: 5rem auto 0;
   width: 8rem;
   padding: 1rem;

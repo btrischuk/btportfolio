@@ -12,7 +12,7 @@
     $('.drop-menu').removeClass('toggle-nav');
   });
 
-  //underline current page
+  //current page indicator 
   if ($('body').hasClass('page-template-about')) {
     $( '.menu-link-about' ).addClass( 'active-page' );
   }

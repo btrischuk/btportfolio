@@ -551,6 +551,9 @@ a {
 .main-navigation .active-page, .menu-link-about .menu-link-projects .menu-link-contact .active-page {
   color: green; }
 
+.site-header .site-description {
+  margin: 0; }
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -817,16 +820,6 @@ object {
           justify-content: center; }
 
 /* Front page */
-.home {
-  background-color: grey; }
-
-.widget-area {
-  display: inline;
-  text-align: right;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right; }
-
 .page-template-projects .site-content {
   background: url(../../images/background.png); }
   .page-template-projects .site-content p, .page-template-projects .site-content h2 {
@@ -860,6 +853,9 @@ object {
           justify-content: center;
   font-size: 2rem;
   color: white; }
+
+.site-description {
+  margin: 0; }
 
 .project-image {
   height: 50vh;
@@ -931,6 +927,7 @@ object {
           justify-content: center;
   background-color: #007515;
   text-decoration: none;
+  text-align: center;
   margin: 5rem auto 0;
   width: 8rem;
   padding: 1rem;
