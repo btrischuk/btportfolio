@@ -983,6 +983,10 @@ object {
 .page-template-about .entry-title {
   display: none; }
 
+img.project-image.about-image {
+  height: 10rem;
+  border-radius: 0; }
+
 .page-template-contact {
   margin-bottom: 6rem; }
   .page-template-contact img {

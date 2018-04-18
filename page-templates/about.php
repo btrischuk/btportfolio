@@ -35,6 +35,7 @@ get_header(); ?>
 
 				<p class="about-paragraph">
 					My passion for software development continues to grow and take a greater bite out of my passion-pie-chart. 
+					<img class= "project-image about-image" src= '<?php echo CFS()->get( 'about_image' );	?>'>
 				</p>
 			</div>
 

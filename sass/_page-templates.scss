@@ -129,7 +129,6 @@ url(../../images/background.png);
   box-shadow: $color__text-shadow-thick;
   @include tablet {
     margin-top: 1rem;
-
   }
 }
 .project-content .project-button:hover {
@@ -171,6 +170,11 @@ url(../../images/background.png);
   .entry-title {
     display: none;
   }
+}
+
+img.project-image.about-image {
+  height: 10rem;
+  border-radius: 0;
 }
 
 // Contact page
