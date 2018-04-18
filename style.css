@@ -255,6 +255,12 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
+h1, p {
+  font-family: "Arvo", serif !important; }
+
+h2 {
+  font-family: "Indie Flower", cursive !important; }
+
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
@@ -1053,6 +1059,12 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, .wpcf7-response-outpu
   @media (min-width: 600px) {
     .site-footer .site-info a {
       width: 5rem; } }
+
+.home .site-content {
+  height: 100vh; }
+
+.home .page-content {
+  display: none; }
 
 .menu ul {
   -webkit-box-orient: horizontal;

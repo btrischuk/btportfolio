@@ -15,6 +15,7 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Indie+Flower" rel="stylesheet">
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
 	<?php wp_head(); ?>

@@ -15,6 +15,14 @@ textarea {
 
 /* Headings */
 
+h1, p {
+	font-family: $font__title-name!important;
+}
+
+h2 {
+	font-family: $font__title-second!important;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }

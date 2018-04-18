@@ -4,6 +4,13 @@
 //   position: absolute;
 // }
 
+.home .site-content {
+  height: 100vh;
+}
+.home .page-content {
+  display: none;
+}
+
 .menu ul {
   flex-direction: row;
   display: flex;

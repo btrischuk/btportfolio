@@ -12,7 +12,7 @@ get_header(); ?>
 
 
 	<div class="entry-header ">
-    <h1 class= "project-title"><?php echo CFS()->get( 'project_title' ); ?></h1>
+    <h2 class= "project-title"><?php echo CFS()->get( 'project_title' ); ?></h2>
     <div class= "project-image">
       <img class= "project-image" src= '<?php echo CFS()->get( 'project_image' );	?>'>
       <p class= "project-description"><?php echo CFS()->get( 'project_description' );	?></p>
@@ -64,9 +64,18 @@ get_header(); ?>
       <p class= "project-description"><?php echo CFS()->get( 'project_description6' );	?></p>
     </div>
     <a class="project-button" href="https://btrischuk.github.io/perfect-paddles/">Explore Site!</a></p>
+  </div>
+  
+  <div class="entry-header ">
+    <h2 class= "project-title"><?php echo CFS()->get( 'project_title7' );	?></h2>
+    <div class= "project-image">
+      <img class= "project-image" src= '<?php echo CFS()->get( 'project_image7' );	?>'>
+      <p class= "project-description"><?php echo CFS()->get( 'project_description7' );	?></p>
+    </div>
+    <a class="project-button" href="https://btrischuk.github.io/aloha/">Explore Site!</a></p>
 	</div>
 				
-
+  
 </div>
 <?php get_footer(); ?>
 
