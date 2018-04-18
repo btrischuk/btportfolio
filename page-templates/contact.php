@@ -10,7 +10,8 @@ get_header(); ?>
     <div class="connect-hero">
       <img class= "coffee" src= '<?php echo CFS()->get( 'contact_hero_image' );	?>'>
       <h1 class="coffee-date">Let's Grab a Coffee!</h1>
-      <p class="contact-info">Having issues with your current site? Feeling out of date and craving an upgrade? Wanting to bring your company's presence to the internet with a brand new page? I can help! Send me an email at<a href="mailto:me@breckontrischuk.com?Subject=Initial inquiry"> me@breckontrischuk.com</a> and we can get started! </p>
+      <p class="contact-info">I am currently taking on new projects!</p>
+      <p class="contact-info">Having issues with your current site? Feeling out of date and craving an upgrade? Wanting to bring your company's presence to the internet with a brand new page? I can help! Send me an email at <a href="mailto:me@breckontrischuk.com?Subject=Initial inquiry"> me@breckontrischuk.com</a> and we can get started! </p>
     </div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
