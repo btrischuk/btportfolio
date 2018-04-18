@@ -17,8 +17,10 @@ get_header(); ?>
       <img class= "project-image" src= '<?php echo CFS()->get( 'project_image' );	?>'>
       <p class= "project-description"><?php echo CFS()->get( 'project_description' );	?></p>
     </div>
-    <a class="project-button" href="http://lovesea.van.cp.academy.red/">Explore Staged Site!</a></p>
-    <a class="project-button" href="https://github.com/redacademy/lovesea-fall-2017/tree/master/themes/lovesea">The Code!</a></p>
+    <div class=button-group>
+      <a class="project-button" href="http://lovesea.van.cp.academy.red/">Explore Site!</a></p>
+      <a class="project-button" href="https://github.com/redacademy/lovesea-fall-2017/tree/master/themes/lovesea">The Code!</a></p>
+    </div>
   </div>
   
   <div class="entry-header ">
@@ -45,8 +47,12 @@ get_header(); ?>
       <img class= "project-image" src= '<?php echo CFS()->get( 'project_image4' );	?>'>
       <p class= "project-description"><?php echo CFS()->get( 'project_description4' );	?></p>
     </div>
-    <a class="project-button" href="https://btrischuk.github.io/pong/">Play Pong!</a></p>
+    <div class=button-group>
+      <a class="project-button" href="https://btrischuk.github.io/pong/">Play Pong!</a></p>
+      <a class="project-button" href="https://github.com/btrischuk/pong">The Code!</a></p>
+    </div>
   </div>
+
   
   <div class="entry-header ">
     <h2 class= "project-title"><?php echo CFS()->get( 'project_title5' );	?></h2>
@@ -54,7 +60,10 @@ get_header(); ?>
       <img class= "project-image" src= '<?php echo CFS()->get( 'project_image5' );	?>'>
       <p class= "project-description"><?php echo CFS()->get( 'project_description5' );	?></p>
     </div>
-    <a class="project-button" href="https://btrischuk.github.io/instanews/">Explore Site!</a></p>
+    <div class=button-group>
+      <a class="project-button" href="https://btrischuk.github.io/instanews/">Explore Site!</a></p>
+      <a class="project-button" href="https://github.com/btrischuk/instanews">The Code!</a></p>
+    </div>
   </div>
   
   <div class="entry-header ">
@@ -63,16 +72,22 @@ get_header(); ?>
       <img class= "project-image" src= '<?php echo CFS()->get( 'project_image6' );	?>'>
       <p class= "project-description"><?php echo CFS()->get( 'project_description6' );	?></p>
     </div>
-    <a class="project-button" href="https://btrischuk.github.io/perfect-paddles/">Explore Site!</a></p>
+    <div class=button-group>
+      <a class="project-button" href="https://btrischuk.github.io/perfect-paddles/">Explore Site!</a></p>
+      <a class="project-button" href="https://github.com/btrischuk/perfect-paddles">The Code!</a></p>
+    </div>
   </div>
-  
+
   <div class="entry-header ">
     <h2 class= "project-title"><?php echo CFS()->get( 'project_title7' );	?></h2>
     <div class= "project-image">
       <img class= "project-image" src= '<?php echo CFS()->get( 'project_image7' );	?>'>
       <p class= "project-description"><?php echo CFS()->get( 'project_description7' );	?></p>
     </div>
-    <a class="project-button" href="https://btrischuk.github.io/aloha/">Explore Site!</a></p>
+    <div class=button-group>
+      <a class="project-button" href="https://btrischuk.github.io/aloha/">Explore Site!</a></p>
+      <a class="project-button" href="https://github.com/btrischuk/aloha">The Code!</a></p>
+    </div>
 	</div>
 				
   
