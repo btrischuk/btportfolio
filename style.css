@@ -833,7 +833,7 @@ object {
 
 .project-content {
   margin: 0 auto;
-  padding-bottom: 5rem; }
+  padding: 5rem 0 15rem 0; }
 
 .entry-header {
   display: -webkit-box;
@@ -881,15 +881,13 @@ object {
       width: 70vw; } }
 
 .mobile-project-info {
-  text-align: center;
-  padding-top: 4rem; }
+  text-align: center; }
   @media (min-width: 600px) {
     .mobile-project-info {
       visibility: hidden; } }
 
 .tablet-project-info {
   visibility: hidden;
-  margin-top: 4rem;
   text-align: center; }
   @media (min-width: 600px) {
     .tablet-project-info {
@@ -990,13 +988,20 @@ object {
     z-index: -1; }
   .page-template-contact .coffee-date, .page-template-contact .contact-info {
     text-align: center;
-    width: 30rem;
+    width: 80vw;
     margin: 0 auto;
     padding-top: 5rem;
     color: #fff; }
+    @media (min-width: 600px) {
+      .page-template-contact .coffee-date, .page-template-contact .contact-info {
+        width: 30rem; } }
     .page-template-contact .coffee-date a, .page-template-contact .contact-info a {
       color: lightblue;
       text-decoration: underline; }
+
+.g-recaptcha {
+  margin: 0 auto;
+  width: 19rem; }
 
 div.wpcf7-response-output {
   margin: 0 auto; }

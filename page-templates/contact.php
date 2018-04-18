@@ -18,7 +18,7 @@ get_header(); ?>
 
 
       <?php get_template_part( 'template-parts/content', 'page' ); ?>
-      <!-- <div class="g-recaptcha" data-sitekey="6LdhvkkUAAAAAATV-npAF8bbMHK2aiIJPSNvuvyX"></div> -->
+      <div class="g-recaptcha" data-sitekey="6LdhvkkUAAAAAATV-npAF8bbMHK2aiIJPSNvuvyX"></div>
 
 
 			<?php endwhile; // End of the loop. ?>
