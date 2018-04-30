@@ -24,7 +24,9 @@ get_header(); ?>
 				<p class="about-paragraph">
 					I am a Front End Developer with a strong focus on WordPress, JavaScript, PHP, Html5, Css3, Sass, JQuery, and  Responsive Designed web pages.
 				</p>
-
+				<p class="about-paragraph">
+					I am currently accepting freelance projects! 
+				</p>
 				<p class="about-paragraph">
 				Saskatchewan-rockclimber. You can just image the misconceptions that description of myself brings. Instead of directly clarifying this, I feed my very sarcastic humor with various comments. This gives me great joy.  Living the lifestyle of a rock climber requires a high level of creativity and psych when one finds himself born in the prairies, home of one lonely climbable rock within a 500km range. Needless to say I now find myself living amongst the mountains.
 				</p>

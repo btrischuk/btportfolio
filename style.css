@@ -249,14 +249,14 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: sans-serif, Courier, serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
 h1, p {
-  font-family: "Arvo", serif !important; }
+  font-family: "Arvo", Courier serif !important; }
 
 h2 {
   font-family: "Indie Flower", cursive !important; }
